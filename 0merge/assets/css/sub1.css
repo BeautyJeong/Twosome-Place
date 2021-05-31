@@ -61,10 +61,21 @@
 }
 
 /* 슬라이더 */
-.blend .wrap{height: 898px;padding-top: 600px; }
+.blend .wrap{height: 898px;padding-top: 700px; }
 .swiper-container{overflow: visible;font-family: NtSansKR;}
 .swiper-wrapper{height: 898px;}
 .swiper-slide{border-radius: 10px;overflow: hidden;}
+
+/* swiper-pagination */
+.swiper-pagination{color: #54565a;font-size: 25px;line-height: 25px;letter-spacing: 2.5px; /* background: pink; */width: 100%;}
+.swiper-pagination span:last-child{position: relative;padding-left: 40px;}
+.swiper-pagination-bullet{background: transparent;}
+
+/* .num */
+.num{top: -105px;left: 0;width: 100%;text-align: center;color:rgba(136, 136, 136, 0.3);font-size: 50px;}
+.num span:first-child{position: relative;padding-right: 90px;/* background: yellow; */}
+.num span:first-child::after{content: "";position: absolute;left: 50%;top: 50%; width: 2px;height: 27px;background: #060606;}
+.num span:last-child{position: absolute;left: 0;top: 0;width: 100%; /* border: 1px solid red; */padding-left: 120px;}
 
 /* 이전다음버튼 */
 .swiper-button-prev{left: -130px;}
@@ -130,7 +141,7 @@
 .blend .recom p::before{left: 0;border-right-color: transparent;}
 .blend .recom p::after{right: 0;border-left-color: transparent;}
 
-.blend .area .more{position: absolute;top: 550px;right: 350px;font-size: 18px;}
+.blend .area .more{position: absolute;top: 650px;right: 350px;font-size: 18px;}
 .blend .area .more:hover, .blend .area .more:focus{color: #a9041a;}
 .blend .area .more::after{content: "";position: absolute;width: 50px;height: 1px;right: -63px;top: 60%;background: #54565a;}
 

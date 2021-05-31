@@ -21,6 +21,8 @@
 
     <script>
         $(document).ready(function () {
+            var myArray = ['BLACK' + '<br>' + 'GROUND', 'AROMA' + '<br>' + 'NOTE']
+
             const swiper = new Swiper('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
@@ -31,6 +33,13 @@
                     prevEl: '.swiper-button-prev',
                 },
 
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + myArray[index] + '</span>';
+                    },
+                },
                 slidesPerView: 1, //한 화면에 보여지는 슬라이더 개수
                 spaceBetween: 200, //슬라이더 사이 공백
                 speed: 1000,
@@ -49,7 +58,7 @@
         <header id="header" class="bdbox">
             <div class="inner">
                 <h1 class="logo">
-                    <a href="../index.html"><img src="../assets/images/common/logo.png" alt="투썸플레이스"></a>
+                    <a href="../index.html"><img src="../assets/images/common/logo3.png" alt="투썸플레이스"></a>
                 </h1>
                 <ul class="util d_f">
                     <li><a href="#">로그인</a></li>
@@ -62,18 +71,18 @@
                         <h2 class="blind">주메뉴</h2>
                         <ul class="d_f">
                             <li>
-                                <a href="coff_story.html">TWOSOME</a>
+                                <a href="../story/coff_story.html">TWOSOME</a>
                                 <ul>
-                                    <li><a href="coff_story.html">투썸 히스토리</a></li>
-                                    <li><a href="coff_story.html">커피 스토리</a></li>
+                                    <li><a href="../story/coff_story.html">투썸 히스토리</a></li>
+                                    <li><a href="../story/coff_story.html">커피 스토리</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="../menu/drink.html">MENU</a>
+                                <a href="drink.html">MENU</a>
                                 <ul>
-                                    <li><a href="../menu/drink.html">음료</a></li>
-                                    <li><a href="../menu/drink.html">푸드</a></li>
-                                    <li><a href="../menu/drink.html">상품</a></li>
+                                    <li><a href="drink.html">음료</a></li>
+                                    <li><a href="drink.html">푸드</a></li>
+                                    <li><a href="drink.html">상품</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -197,9 +206,9 @@
                                             <div class="bk_right">
                                                 <p class="yellow">블랙그라운드 원두 향미</p>
                                                 <div class="p_l">
-                                                    <p>&gt; Full-body</p>
-                                                    <p>&gt; Nutty</p>
-                                                    <p>&gt; Chocolate</p>
+                                                    <p>> Full-body</p>
+                                                    <p>> Nutty</p>
+                                                    <p>> Chocolate</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,28 +260,34 @@
                                             <div class="bk_right">
                                                 <p class="yellow">아로마노트 원두 향미</p>
                                                 <div class="p_l">
-                                                    <p>&gt; Berry-like</p>
-                                                    <p>&gt; Juicy</p>
-                                                    <p>&gt; Floral</p>
+                                                    <p>> Berry-like</p>
+                                                    <p>> Juicy</p>
+                                                    <p>> Floral</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="recom fade_up delay-7">
-                                            <p>꽃잎을 품은 산들바람처럼 가볍고 산뜻한 커피로 지금의 기분을 남기고 싶다면, <br>한 모금 머금는 순간 입가에 잔잔한 미소를 띄우게 될 '아로마노트'를 추천드립니다.</p>
+                                            <p>꽃잎을 품은 산들바람처럼 가볍고 산뜻한 커피로 지금의 기분을 남기고 싶다면, <br>한 모금 머금는 순간 입가에 잔잔한 미소를
+                                                띄우게 될 '아로마노트'를 추천드립니다.</p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="num p_a">
+                                <span aria-hidden="true">01</span>
+                                <span aria-hidden="true">02</span>
                             </div>
                             <div class="swiper-button-prev prev_next">
                                 <svg class="circle prev">
                                     <defs>
                                         <linearGradient id="myGradient1" x1="100%" y1="0" x2="0" y2="0">
-                                          <stop offset="0%" stop-color="#a9041a" /><!-- red -->
-                                          <stop offset="100%" stop-color="#da5d6d" /><!-- blue -->
+                                            <stop offset="0%" stop-color="#a9041a" /><!-- red -->
+                                            <stop offset="100%" stop-color="#da5d6d" /><!-- blue -->
                                         </linearGradient>
-                                      </defs>
-                                      <path d="M 48 0 H 48 V 105 L 48 48"></path>
-                                      <circle cx="50" cy="50" r="45" stroke="url('#myGradient1')" /><!-- 테두리 4 -->
+                                    </defs>
+                                    <path d="M 48 0 H 48 V 105 L 48 48"></path>
+                                    <circle cx="50" cy="50" r="45" stroke="url('#myGradient1')" /><!-- 테두리 4 -->
                                 </svg>
                                 <p>BLACK<br>
                                     GROUND</p>
@@ -281,12 +296,12 @@
                                 <svg class="circle next">
                                     <defs>
                                         <linearGradient id="myGradient2" x1="100%" y1="0" x2="0" y2="0">
-                                          <stop offset="0%" stop-color="#da5d6d" /><!-- red -->
-                                          <stop offset="100%" stop-color="#a9041a" /><!-- blue -->
+                                            <stop offset="0%" stop-color="#da5d6d" /><!-- red -->
+                                            <stop offset="100%" stop-color="#a9041a" /><!-- blue -->
                                         </linearGradient>
-                                      </defs>
-                                      <path d="M 48 0 H 48 V 105 L 48 48"></path>
-                                      <circle cx="50" cy="50" r="45" stroke="url('#myGradient2')" /><!-- 테두리 4 -->
+                                    </defs>
+                                    <path d="M 48 0 H 48 V 105 L 48 48"></path>
+                                    <circle cx="50" cy="50" r="45" stroke="url('#myGradient2')" /><!-- 테두리 4 -->
                                 </svg>
                                 <p>AROMA<br>
                                     NOTE</p>
