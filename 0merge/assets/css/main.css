@@ -166,11 +166,11 @@
 #cnt3.on h2{opacity: 1;top: 0;}
 
 /* 1) 슬라이더 상세 내용 */
-#cnt3 .film{height: 574px;overflow: hidden;margin-top: 85px;} /* .swiper를 감싸는 div.film을 하나 더 만들어서 넘쳐나는 내용 숨기기 합니다 */
+#cnt3 .film{height: 574px;overflow: hidden;margin-top: 85px;} /* .swiper를 감싸는 div.film을 하나 더 만들어서 넘쳐나는 내용 숨기기 */
 #cnt3 .swiper-container{overflow: visible;}
 
-#cnt3 .swiper-wrapper{height: 504px;} /* 영상 높이 만큼으로 줄여주세요 */
-#cnt3 .swiper-slide{border-radius: 60px;overflow: hidden;box-shadow: 1px 2px 8px rgba(0, 0, 0, .3);} /* 둥근 모서리 지정하고 overflow:hidden으로 숨기면 포토샵 디자인 처럼 되요 */
+#cnt3 .swiper-wrapper{height: 504px;} /* 영상 높이 만큼으로 줄이기 */
+#cnt3 .swiper-slide{border-radius: 60px;overflow: hidden;box-shadow: 1px 2px 8px rgba(0, 0, 0, .3);} /* 둥근 모서리 지정하고 overflow:hidden으로 숨기기 */
 
 /* 2) 이전다음버튼 */
 #cnt3 .prev_next{width: 29px;height: 43px;}
@@ -180,8 +180,8 @@
 
 /* #cnt3 .controller > div, #cnt3 .controller .stop_play{position: absolute;background: no-repeat;} */
 #cnt3 .controller{position: absolute;bottom: -70px;left: 50%;width: 456px;height: 17px;transform: translateX(-50%);/* background: yellow; */}
-/* 2) pagination 은 swiper.css에서 처음부터 absolute 였답니다 */
-#cnt3 .swiper-pagination{top: -7px;left: 0;height: 3px;}/* top: -10px;을 올려주어야 라인들이 보여지네요.. 이건 이상해요 좀 */
+/* 2) pagination 은 swiper.css에서 처음부터 absolute */
+#cnt3 .swiper-pagination{top: -7px;left: 0;height: 3px;}/* top: -10px;을 올려주어야 라인들이 보여짐 */
 #cnt3 .swiper-pagination span{width: 124px;margin-right: 22px;}
 
 
